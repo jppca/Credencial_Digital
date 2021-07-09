@@ -158,18 +158,25 @@ class _HomePageState extends State<HomePage> {
         foregroundColor: Colors.white,
         overlayOpacity: 0.5,
         elevation: 8.0,
+        animationSpeed: 100,
         children: [
           SpeedDialChild(
               label: "PDF",
               child: Icon(Icons.attach_file, color: Colors.blue),
+              labelBackgroundColor: Colors.white,
+              backgroundColor: Colors.white,
               onTap: () {}),
           SpeedDialChild(
               label: "Cámara",
               child: Icon(Icons.camera_alt, color: Colors.blue),
+              labelBackgroundColor: Colors.white,
+              backgroundColor: Colors.white,
               onTap: () {}),
           SpeedDialChild(
               label: "QR",
               child: Icon(Icons.qr_code, color: Colors.blue),
+              labelBackgroundColor: Colors.white,
+              backgroundColor: Colors.white,
               onTap: () {
                 Navigator.pushNamed(context, '/qr');
               }),
