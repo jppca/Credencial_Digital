@@ -1,12 +1,12 @@
-import 'package:credeuan/widgets/widgets_home_page/widget_button_logout.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 //My imports
 import 'package:credeuan/widgets/widgets_home_page/widget_data.dart';
 import 'package:credeuan/widgets/widgets_home_page/widget_data_Institution.dart';
 import 'package:credeuan/widgets/widgets_home_page/widget_photo_data.dart';
 import 'package:credeuan/widgets/widgets_home_page/widget_validity.dart';
-import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:credeuan/widgets/widgets_home_page/widget_button_logout.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -170,7 +170,9 @@ class _HomePageState extends State<HomePage> {
           SpeedDialChild(
               label: "QR",
               child: Icon(Icons.qr_code, color: Colors.blue),
-              onTap: () {}),
+              onTap: () {
+                Navigator.pushNamed(context, '/qr');
+              }),
         ],
       ),
     );

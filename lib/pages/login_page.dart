@@ -1,7 +1,7 @@
-import 'package:credeuan/widgets/widgets_login_page/widget_title_app.dart';
 import 'package:flutter/material.dart';
 
 //My imports
+import 'package:credeuan/widgets/widgets_login_page/widget_title_app.dart';
 import 'package:credeuan/widgets/widgets_login_page/widget_button_login.dart';
 import 'package:credeuan/widgets/widgets_login_page/widget_custom_imput.dart';
 
@@ -39,12 +39,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
 //Widget para registro del email de usuario.
                   CustomInput(
-                      placeholder: 'Email',
+                      placeholder: 'Correo institucional',
                       textcontroller: TextEditingController(),
                       keybordtype: TextInputType.emailAddress),
-                  SizedBox(
-                    height: 20,
-                  ),
 //Widget para registro de la contraseña de usuario.
                   CustomInput(
                     ispassword: true,
@@ -70,11 +67,11 @@ class _LoginPageState extends State<LoginPage> {
                       colorRelleno: Colors.white,
                       colorTextIco: Colors.blue),
                   SizedBox(
-                    height: 20,
+                    height: 40,
                   ),
 //Widget paramostrar terminos y condiciones de uso de la App(falta hacer ajustes).
                   Text(
-                    "Terminos y condiciones",
+                    "Terminos y condiciones de uso",
                     style: TextStyle(color: Colors.grey),
                   ),
                   SizedBox(
