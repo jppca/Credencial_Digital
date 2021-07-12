@@ -165,7 +165,9 @@ class _HomePageState extends State<HomePage> {
               child: Icon(Icons.attach_file, color: Colors.blue),
               labelBackgroundColor: Colors.white,
               backgroundColor: Colors.white,
-              onTap: () {}),
+              onTap: () {
+                Navigator.pushNamed(context, '/pdf');
+              }),
           SpeedDialChild(
               label: "Cámara",
               child: Icon(Icons.camera_alt, color: Colors.blue),

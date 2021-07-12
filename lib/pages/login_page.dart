@@ -56,14 +56,12 @@ class _LoginPageState extends State<LoginPage> {
                   WButtonLogin(
                       icon: Icons.login,
                       textButton: 'INICIAR SESIÓN',
-                      textcontroller: TextEditingController(),
                       colorRelleno: Colors.blue,
                       colorTextIco: Colors.white),
 //Widget para hacer registro en la App(boton).
                   WButtonLogin(
                       icon: Icons.person,
                       textButton: 'REGISTRARSE',
-                      textcontroller: TextEditingController(),
                       colorRelleno: Colors.white,
                       colorTextIco: Colors.blue),
                   SizedBox(

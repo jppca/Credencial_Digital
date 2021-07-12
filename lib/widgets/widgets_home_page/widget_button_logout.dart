@@ -9,7 +9,7 @@ class WButtonLogout extends StatelessWidget {
         margin: EdgeInsets.only(right: 10),
         child: IconButton(
           onPressed: () {
-            Navigator.pushNamed(context, '/login');
+            Navigator.pop(context, '/login');
           },
           icon: Icon(
             Icons.logout,
