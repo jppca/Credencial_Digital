@@ -65,6 +65,7 @@ class _HomePageState extends State<HomePage> {
                       ),
 //Widget  de datos de estudiante.
                       WData(
+                          unidadAcademica: 'Economía e informática',
                           programaAcademico: 'Lic. Sistemas Computacionales',
                           correoInstitucional: '123456@uan.edu.mx',
                           matriculaAcademica: '123456'),

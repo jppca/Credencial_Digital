@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class WData extends StatelessWidget {
   final String programaAcademico;
+  final String unidadAcademica;
   final String correoInstitucional;
   final String matriculaAcademica;
 
@@ -9,7 +10,8 @@ class WData extends StatelessWidget {
       {Key key,
       @required this.programaAcademico,
       @required this.correoInstitucional,
-      @required this.matriculaAcademica})
+      @required this.matriculaAcademica,
+      @required this.unidadAcademica})
       : super(key: key);
 
   @override
@@ -21,6 +23,44 @@ class WData extends StatelessWidget {
         child: Container(
           child: Column(
             children: <Widget>[
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.symmetric(
+                    horizontal: BorderSide(
+                        width: 1.0, color: Color.fromRGBO(241, 249, 255, 1)),
+                  ),
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      margin: new EdgeInsets.all(30),
+                      child: Icon(
+                        Icons.school,
+                        color: Colors.blue,
+                      ),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          this.unidadAcademica,
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 14,
+                          ),
+                        ),
+                        Text(
+                          'Unidad académica',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
               Container(
                 decoration: BoxDecoration(
                   border: Border.symmetric(
