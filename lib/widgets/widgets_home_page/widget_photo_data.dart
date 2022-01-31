@@ -46,7 +46,7 @@ class WPhotoData extends StatelessWidget {
                 height: 3,
               ),
               Text(
-                '$rol, Universidad Autónoma de Nayarit',
+                '$rol, Universidad',
                 style: TextStyle(color: Colors.blue, fontSize: 12),
               ),
               SizedBox(

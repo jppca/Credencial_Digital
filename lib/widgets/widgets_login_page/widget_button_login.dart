@@ -21,7 +21,6 @@ class WButtonLogin extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: this.colorRelleno,
-        //  borderRadius: BorderRadius.circular(30),
         border: Border.all(
           width: 1.0,
           color: this.colorTextIco,

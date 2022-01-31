@@ -39,10 +39,15 @@ class WCrede extends StatelessWidget {
                 child: Container(
                   width: 200,
                   height: 80,
-                  child: Image.asset(
-                    this.imgheader,
-                    isAntiAlias: true,
-                    fit: BoxFit.fill,
+                  child: Center(
+                    child: Text(
+                      'LOGO INSTITUCIÓN',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 18,
+                      ),
+                    ),
                   ),
                 ),
               ),

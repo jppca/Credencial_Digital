@@ -164,7 +164,7 @@ class WData extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Matricula',
+                          'Matrícula',
                           style: TextStyle(
                             color: Colors.blue,
                             fontSize: 12,

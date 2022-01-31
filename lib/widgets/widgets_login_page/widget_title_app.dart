@@ -14,12 +14,12 @@ class WTitleApp extends StatelessWidget {
         children: [
           Text(
             this.title,
-            style: TextStyle(fontSize: 35, color: Colors.blue),
+            style: TextStyle(fontSize: 28, color: Colors.blue),
           ),
           Text(
             this.titleExt,
             style: TextStyle(
-              fontSize: 35,
+              fontSize: 28,
               color: Colors.blue,
               fontWeight: FontWeight.bold,
             ),

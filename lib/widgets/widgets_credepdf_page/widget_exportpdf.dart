@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //My imports
-import 'package:credeuan/widgets/widgets_credepdf_page/widget_button_credepdf.dart';
+import 'package:credencialdigital/widgets/widgets_credepdf_page/widget_button_credepdf.dart';
 
 class WExportPdf extends StatelessWidget {
   const WExportPdf({Key key}) : super(key: key);

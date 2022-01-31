@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 
 //My imports
-import 'package:credeuan/widgets/widgets_home_page/widget_data.dart';
-import 'package:credeuan/widgets/widgets_home_page/widget_data_Institution.dart';
-import 'package:credeuan/widgets/widgets_home_page/widget_photo_data.dart';
-import 'package:credeuan/widgets/widgets_home_page/widget_validity.dart';
-import 'package:credeuan/widgets/widgets_home_page/widget_button_logout.dart';
+import 'package:credencialdigital/widgets/widgets_home_page/widget_button_logout.dart';
+import 'package:credencialdigital/widgets/widgets_home_page/widget_data.dart';
+import 'package:credencialdigital/widgets/widgets_home_page/widget_data_Institution.dart';
+import 'package:credencialdigital/widgets/widgets_home_page/widget_photo_data.dart';
+import 'package:credencialdigital/widgets/widgets_home_page/widget_validity.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(241, 249, 255, 1),
-//Widget de barra indicativa con boton  para cerrar sesión
+//Widget de barra indicativa con botón para cerrar sesión.
       appBar: AppBar(
         elevation: 0.0,
         leading: SizedBox(),
@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
         ),
         backgroundColor: Colors.blue,
         actions: [
-//Widget para cerrar sesión
+//Widget para cerrar sesión.
           WButtonLogout(),
         ],
       ),
@@ -50,29 +50,29 @@ class _HomePageState extends State<HomePage> {
                   width: MediaQuery.of(context).size.width,
                   child: Column(
                     children: <Widget>[
-//Widget  de datos de institutición(Imagen)
-                      WDataInstitution(img: 'assets/imguan.png'),
+//Widget de datos de institutición.
+                      WDataInstitution(),
                       SizedBox(
                         height: 10,
                       ),
-//Widget  de datos y fotografia de estudiante.
+//Widget de datos y fotografia de estudiante.
                       WPhotoData(
-                          img: 'assets/io.png',
+                          img: 'assets/io.jpg',
                           nombre: 'Francisco Villa',
                           rol: 'Estudiante'),
                       SizedBox(
                         height: 10,
                       ),
-//Widget  de datos de estudiante.
+//Widget de datos de estudiante.
                       WData(
                           unidadAcademica: 'Economía e informática',
                           programaAcademico: 'Lic. Sistemas Computacionales',
-                          correoInstitucional: '123456@uan.edu.mx',
+                          correoInstitucional: '123456@uni.edu.mx',
                           matriculaAcademica: '123456'),
                       SizedBox(
                         height: 10,
                       ),
-//Widget  de peridos escolares cursados, perido actual y no cursados de estudiante.
+//Widget  de periodos escolares cursados, perido actual y no cursados de estudiante.
                       Container(
                         width: MediaQuery.of(context).size.width - 30,
                         child: Card(
@@ -151,7 +151,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
-//Widget de menu de opciones
+//Widget de menú de opciones.
       floatingActionButton: SpeedDial(
         animatedIcon: AnimatedIcons.menu_close,
         overlayColor: Colors.white,

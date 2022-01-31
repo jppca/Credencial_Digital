@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 
 //My imports
-import 'package:credeuan/widgets/widgets_credepdf_page/widget_crede.dart';
-import 'package:credeuan/widgets/widgets_credepdf_page/widget_credereverse.dart';
-import 'package:credeuan/widgets/widgets_credepdf_page/widget_exportpdf.dart';
+import 'package:credencialdigital/widgets/widgets_credepdf_page/widget_crede.dart';
+import 'package:credencialdigital/widgets/widgets_credepdf_page/widget_credereverse.dart';
+import 'package:credencialdigital/widgets/widgets_credepdf_page/widget_exportpdf.dart';
 
 class CredePdfPage extends StatefulWidget {
   CredePdfPage({Key key}) : super(key: key);
@@ -19,7 +19,7 @@ class _CredePdfPageState extends State<CredePdfPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(241, 249, 255, 1),
-//Widget de barra indicativa con boton de retorno a pantalla anterior
+//Widget de barra indicativa con botón de retorno a pantalla anterior.
       appBar: AppBar(
         elevation: 0.0,
         title: Container(
@@ -39,7 +39,6 @@ class _CredePdfPageState extends State<CredePdfPage> {
           )
         ],
       ),
-
       body: Scrollbar(
         child: Align(
           alignment: Alignment.center,
@@ -58,10 +57,10 @@ class _CredePdfPageState extends State<CredePdfPage> {
                         key: cardKey,
                         flipOnTouch: true,
                         front: Container(
-//widget del frente de credencial
+//widget del frente de credencial.
                           child: WCrede(
                             imgheader: 'assets/imguan.png',
-                            imguser: 'assets/io.png',
+                            imguser: 'assets/io.jpg',
                             tipeuser: 'ESTUDIANTE',
                             school: 'U.A de Economía e Informatica',
                             name: 'Francisco Villa',
@@ -72,7 +71,7 @@ class _CredePdfPageState extends State<CredePdfPage> {
                           ),
                         ),
                         back: Container(
-//widget de reverso de credencial
+//widget de reverso de credencial.
                           child: WCredeReverse(
                             data: '123456',
                           ),
@@ -81,7 +80,7 @@ class _CredePdfPageState extends State<CredePdfPage> {
                       SizedBox(
                         height: 10,
                       ),
-//Widget para exportar pdf
+//Widget para exportar pdf.
                       WExportPdf(),
                     ],
                   ),

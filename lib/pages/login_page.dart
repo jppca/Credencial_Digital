@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 //My imports
-import 'package:credeuan/widgets/widgets_login_page/widget_title_app.dart';
-import 'package:credeuan/widgets/widgets_login_page/widget_button_login.dart';
-import 'package:credeuan/widgets/widgets_login_page/widget_custom_imput.dart';
+import 'package:credencialdigital/widgets/widgets_login_page/widget_button_login.dart';
+import 'package:credencialdigital/widgets/widgets_login_page/widget_custom_imput.dart';
+import 'package:credencialdigital/widgets/widgets_login_page/widget_title_app.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);
@@ -25,15 +25,10 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 children: [
 //Widget de encabezado de interfaz de inicio de sesión y registro.
-                  /*ClipRRect(
-                    child: Container(
-                      child: Image.asset('assets/header.png'),
-                    ),
-                  ),*/
                   SizedBox(
                     height: 80,
                   ),
-                  WTitleApp(title: 'CREDE', titleExt: 'UAN'),
+                  WTitleApp(title: 'CREDENCIAL', titleExt: ' DIGITAL'),
                   SizedBox(
                     height: 80,
                   ),
@@ -52,13 +47,13 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(
                     height: 80,
                   ),
-//Widget para  inciar sesión(boton).
+//Widget para  inciar sesión(botón).
                   WButtonLogin(
                       icon: Icons.login,
                       textButton: 'INICIAR SESIÓN',
                       colorRelleno: Colors.blue,
                       colorTextIco: Colors.white),
-//Widget para hacer registro en la App(boton).
+//Widget para hacer registro en la App(botón).
                   WButtonLogin(
                       icon: Icons.person,
                       textButton: 'REGISTRARSE',

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 //My imports
-import 'package:credeuan/widgets/widgets_home_page/widget_photo_data.dart';
-import 'package:credeuan/widgets/widgets_qr_page/widget_QR_Image.dart';
+import 'package:credencialdigital/widgets/widgets_home_page/widget_photo_data.dart';
+import 'package:credencialdigital/widgets/widgets_qr_page/widget_QR_Image.dart';
 
 class QrPage extends StatelessWidget {
   const QrPage({Key key}) : super(key: key);
@@ -11,7 +11,7 @@ class QrPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(241, 249, 255, 1),
-//Widget de barra indicativa con boton de retorno a pantalla anterior
+//Widget de barra indicativa con botón de retorno a pantalla anterior.
       appBar: AppBar(
         elevation: 0.0,
         title: Container(
@@ -31,7 +31,6 @@ class QrPage extends StatelessWidget {
           )
         ],
       ),
-
       body: Scrollbar(
         child: Align(
           alignment: Alignment.center,
@@ -46,9 +45,9 @@ class QrPage extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-//Widget  de datos y fotografia de estudiante.
+//Widget  de datos y fotografía de estudiante.
                       WPhotoData(
-                          img: 'assets/io.png',
+                          img: 'assets/io.jpg',
                           nombre: 'Francisco Villa',
                           rol: 'Estudiante'),
                       SizedBox(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 //My imports
-import 'package:credeuan/routes/routes.dart';
+import 'package:credencialdigital/routes/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'CREDEUAN',
+        title: 'CREDENCIAL-DIGITAL',
         theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
